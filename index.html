@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Quotes App</title>
+    <!-- Icon -->
+    <link rel="Icon" href="images/Icon.png" />
+    <!-- Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+<section class="d-flex flex-column justify-content-center align-items-center">
+      <div class="row">
+        <div
+          class="col-md-12 col-lg-12 text-center"
+        >
+          <h1 class="my-4"><span>Daily</span> Quotes
+          </h1>
+          <p class="fs-2">
+            Press the button to generate a random quote.
+          </p>
+          <button  class="btn btn-warning fw-bold px-2" onclick="generateQuote()">
+            New Quote
+          </button>
+          <div
+          id="quoteBox"
+            class="quotes  opacity-0 my-4 text-center container"
+          >
+            <p id="quote"></p>
+            <p id="author"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
